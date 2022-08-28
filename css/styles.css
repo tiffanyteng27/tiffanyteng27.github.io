@@ -33,16 +33,20 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
+  --bs-nav: #fff;
+  --bs-primary: #FFFAE6;
+  --bs-secondary: #d0eaf9;
+  --bs-footer: #BBC4C9;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-nav-rgb: 255, 255, 255;
   --bs-primary-rgb: 255, 250, 230;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-secondary-rgb: 208, 234, 249;
+  --bs-footer-rgb: 187, 196, 201;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -2673,7 +2677,10 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   height: 100%;
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-right: 0px;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
   pointer-events: none;
   border: 0.125rem solid transparent;
   transform-origin: 0 0;
@@ -2685,7 +2692,10 @@ textarea.form-control-lg {
   }
 }
 .form-floating > .form-control {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-right: 0px;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 .form-floating > .form-control::-moz-placeholder {
   color: transparent;
@@ -2699,22 +2709,27 @@ textarea.form-control-lg {
 .form-floating > .form-control:not(:-moz-placeholder-shown) {
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 .form-floating > .form-control:not(:-ms-input-placeholder) {
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 .form-floating > .form-control:-webkit-autofill {
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 .form-floating > .form-select {
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
   opacity: 0.65;
@@ -3032,32 +3047,33 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #4B4D4F;
+  border-color: #4B4D4F;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #16a085;
-  border-color: #15967d;
+  background-color: #4B4D4F;
+  border-color: #4B4D4F;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #16a085;
-  border-color: #15967d;
+  background-color: #4B4D4F;
+  border-color: #4B4D4F;
   box-shadow: 0 0 0 0.25rem rgba(60, 198, 171, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #15967d;
-  border-color: #148d75;
+  background-color: #4B4D4F;
+  border-color: #4B4D4F;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(60, 198, 171, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
-  color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  color: #4B4D4F;
+  background-color: #BBC4C9;
+  border-color: #BBC4C9;
+  font-weight: bold;
 }
 
 .btn-secondary {
@@ -3421,12 +3437,14 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
+  color: #4B4D4F;
+  background-color: #fff;
   border-color: #f8f9fa;
 }
 .btn-outline-light:hover {
   color: #000;
   background-color: #f8f9fa;
+  font-weight: bold;
   border-color: #f8f9fa;
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
@@ -4087,6 +4105,7 @@ textarea.form-control-lg {
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
+  font-weight: bold;
   line-height: 1;
   background-color: transparent;
   border: 0.125rem solid transparent;
@@ -7378,7 +7397,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .mb-auto {
@@ -7812,6 +7831,11 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
+.bg-nav {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-nav-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
@@ -7820,6 +7844,11 @@ textarea.form-control-lg {
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-footer {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-footer-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -11338,7 +11367,7 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #4B4D4F;
 }
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff;
@@ -11366,13 +11395,13 @@ html {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #fff;
+  color: #4B4D4F;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: #4B4D4F;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #fbe739;
@@ -11381,7 +11410,7 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #FCEC67;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11402,12 +11431,10 @@ html {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
+    color: #fbe739;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #1abc9c;
+    color: #fbe739;
   }
 
   #mainNav.navbar-shrink {
@@ -11424,7 +11451,7 @@ html {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-radius: 0;
+  border-radius: 12px;
   border-width: 1px;
 }
 .form-floating input.form-control:focus,
@@ -11448,7 +11475,8 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  padding-bottom: 3rem;
+  width: 20rem;
 }
 
 @media (min-width: 992px) {
