@@ -36,7 +36,7 @@
   --bs-nav: #fff;
   --bs-primary: #FFFAE6;
   --bs-secondary: #d0eaf9;
-  --bs-footer: #BBC4C9;
+  --bs-footer: #C3C3C3;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -46,7 +46,7 @@
   --bs-nav-rgb: 255, 255, 255;
   --bs-primary-rgb: 255, 250, 230;
   --bs-secondary-rgb: 208, 234, 249;
-  --bs-footer-rgb: 187, 196, 201;
+  --bs-footer-rgb: 195, 195, 195;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -2571,7 +2571,7 @@ textarea.form-control-lg {
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .form-range {
@@ -3042,27 +3042,27 @@ textarea.form-control-lg {
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .btn-primary {
-  color: #fff;
+  color: #4B4D4F;
   background-color: #4B4D4F;
   border-color: #4B4D4F;
 }
 .btn-primary:hover {
-  color: #fff;
+  color: #4B4D4F;
   background-color: #4B4D4F;
   border-color: #4B4D4F;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
-  color: #fff;
+  color: #4B4D4F;
   background-color: #4B4D4F;
   border-color: #4B4D4F;
   box-shadow: 0 0 0 0.25rem rgba(60, 198, 171, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
+  color: #4B4D4F;
   background-color: #4B4D4F;
   border-color: #4B4D4F;
 }
@@ -3071,8 +3071,8 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #4B4D4F;
-  background-color: #BBC4C9;
-  border-color: #BBC4C9;
+  background-color: #FBE739;
+  border-color: #FBE739;
   font-weight: bold;
 }
 
@@ -11378,6 +11378,10 @@ html {
   font-size: 1.25rem;
 }
 
+.btn-opac-one-forced {
+  opacity: 1 !important;
+}
+
 .btn-social {
   border-radius: 100%;
   display: inline-flex;
@@ -11473,10 +11477,16 @@ html {
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+  padding-bottom: 3rem;
 }
 .masthead .masthead-avatar {
+  padding-right: 3rem;
   padding-bottom: 3rem;
   width: 20rem;
+}
+.vcenter-item{
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 992px) {
@@ -11532,8 +11542,8 @@ html {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: #2c3e50;
   color: #fff;
 }
