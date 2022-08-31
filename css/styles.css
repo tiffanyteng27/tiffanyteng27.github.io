@@ -3047,24 +3047,24 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #4B4D4F;
-  background-color: #4B4D4F;
-  border-color: #4B4D4F;
+  background-color: #FBE739;
+  border-color: #FBE739;
 }
 .btn-primary:hover {
   color: #4B4D4F;
-  background-color: #4B4D4F;
-  border-color: #4B4D4F;
+  background-color: #FBE739;
+  border-color: #FBE739;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #4B4D4F;
-  background-color: #4B4D4F;
-  border-color: #4B4D4F;
+  background-color: #FBE739;
+  border-color: #FBE739;
   box-shadow: 0 0 0 0.25rem rgba(60, 198, 171, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #4B4D4F;
-  background-color: #4B4D4F;
-  border-color: #4B4D4F;
+  background-color: #FBE739;
+  border-color: #FBE739;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(60, 198, 171, 0.5);
@@ -4123,7 +4123,7 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  box-shadow: 0 0 0 0.1rem;
 }
 
 .navbar-toggler-icon {
@@ -11474,14 +11474,17 @@ html {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+  padding-top: 0.25rem;
   padding-bottom: 3rem;
 }
 .masthead .masthead-avatar {
-  padding-right: 3rem;
-  padding-bottom: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   width: 20rem;
 }
 .vcenter-item{
@@ -11516,7 +11519,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(0,0,0, 0.4);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
