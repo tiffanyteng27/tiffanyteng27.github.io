@@ -4111,6 +4111,7 @@ textarea.form-control-lg {
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
   transition: box-shadow 0.15s ease-in-out;
+  color: #4B4D4F;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4119,11 +4120,10 @@ textarea.form-control-lg {
 }
 .navbar-toggler:hover {
   text-decoration: none;
+  color: #FBE739;
 }
 .navbar-toggler:focus {
   text-decoration: none;
-  outline: 0;
-  box-shadow: 0 0 0 0.1rem;
 }
 
 .navbar-toggler-icon {
